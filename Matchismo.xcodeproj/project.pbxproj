@@ -14,6 +14,10 @@
 		7C3D6DC82C242AA8003E3CA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C3D6DC72C242AA8003E3CA2 /* Assets.xcassets */; };
 		7C3D6DCB2C242AA8003E3CA2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 7C3D6DCA2C242AA8003E3CA2 /* Base */; };
 		7C3D6DCE2C242AA8003E3CA2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3D6DCD2C242AA8003E3CA2 /* main.m */; };
+		7CB410122C2B1ED100CD1679 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB410112C2B1ED100CD1679 /* Card.m */; };
+		7CB410172C2B20D900CD1679 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB410162C2B20D900CD1679 /* Deck.m */; };
+		7CB4101A2C2B245A00CD1679 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB410192C2B245A00CD1679 /* PlayingCard.m */; };
+		7CB6B3EF2C2B32F600FA4746 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB6B3EE2C2B32F600FA4746 /* PlayingCardDeck.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,14 @@
 		7C3D6DCA2C242AA8003E3CA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C3D6DCC2C242AA8003E3CA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C3D6DCD2C242AA8003E3CA2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7CB410112C2B1ED100CD1679 /* Card.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		7CB410132C2B1EE500CD1679 /* Card.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		7CB410152C2B20D900CD1679 /* Deck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		7CB410162C2B20D900CD1679 /* Deck.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
+		7CB410182C2B245A00CD1679 /* PlayingCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayingCard.h; sourceTree = "<group>"; };
+		7CB410192C2B245A00CD1679 /* PlayingCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayingCard.m; sourceTree = "<group>"; };
+		7CB6B3ED2C2B32F600FA4746 /* PlayingCardDeck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayingCardDeck.h; sourceTree = "<group>"; };
+		7CB6B3EE2C2B32F600FA4746 /* PlayingCardDeck.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayingCardDeck.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +73,7 @@
 		7C3D6DBA2C242AA6003E3CA2 /* Matchismo */ = {
 			isa = PBXGroup;
 			children = (
+				7CB410102C2B1EBF00CD1679 /* Model */,
 				7C3D6DBB2C242AA6003E3CA2 /* AppDelegate.h */,
 				7C3D6DBC2C242AA6003E3CA2 /* AppDelegate.m */,
 				7C3D6DBE2C242AA6003E3CA2 /* SceneDelegate.h */,
@@ -74,6 +87,21 @@
 				7C3D6DCD2C242AA8003E3CA2 /* main.m */,
 			);
 			path = Matchismo;
+			sourceTree = "<group>";
+		};
+		7CB410102C2B1EBF00CD1679 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7CB410112C2B1ED100CD1679 /* Card.m */,
+				7CB410132C2B1EE500CD1679 /* Card.h */,
+				7CB410152C2B20D900CD1679 /* Deck.h */,
+				7CB410162C2B20D900CD1679 /* Deck.m */,
+				7CB410182C2B245A00CD1679 /* PlayingCard.h */,
+				7CB410192C2B245A00CD1679 /* PlayingCard.m */,
+				7CB6B3ED2C2B32F600FA4746 /* PlayingCardDeck.h */,
+				7CB6B3EE2C2B32F600FA4746 /* PlayingCardDeck.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CB410122C2B1ED100CD1679 /* Card.m in Sources */,
+				7CB6B3EF2C2B32F600FA4746 /* PlayingCardDeck.m in Sources */,
 				7C3D6DC32C242AA6003E3CA2 /* ViewController.m in Sources */,
+				7CB4101A2C2B245A00CD1679 /* PlayingCard.m in Sources */,
 				7C3D6DBD2C242AA6003E3CA2 /* AppDelegate.m in Sources */,
 				7C3D6DCE2C242AA8003E3CA2 /* main.m in Sources */,
+				7CB410172C2B20D900CD1679 /* Deck.m in Sources */,
 				7C3D6DC02C242AA6003E3CA2 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
