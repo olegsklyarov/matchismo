@@ -73,18 +73,11 @@
 		7C3D6DBA2C242AA6003E3CA2 /* Matchismo */ = {
 			isa = PBXGroup;
 			children = (
-				7CB410102C2B1EBF00CD1679 /* Model */,
-				7C3D6DBB2C242AA6003E3CA2 /* AppDelegate.h */,
-				7C3D6DBC2C242AA6003E3CA2 /* AppDelegate.m */,
-				7C3D6DBE2C242AA6003E3CA2 /* SceneDelegate.h */,
-				7C3D6DBF2C242AA6003E3CA2 /* SceneDelegate.m */,
+				7C3D6DC42C242AA6003E3CA2 /* Main.storyboard */,
 				7C3D6DC12C242AA6003E3CA2 /* ViewController.h */,
 				7C3D6DC22C242AA6003E3CA2 /* ViewController.m */,
-				7C3D6DC42C242AA6003E3CA2 /* Main.storyboard */,
-				7C3D6DC72C242AA8003E3CA2 /* Assets.xcassets */,
-				7C3D6DC92C242AA8003E3CA2 /* LaunchScreen.storyboard */,
-				7C3D6DCC2C242AA8003E3CA2 /* Info.plist */,
-				7C3D6DCD2C242AA8003E3CA2 /* main.m */,
+				7CB410102C2B1EBF00CD1679 /* Model */,
+				7CB6B3F02C2B42FE00FA4746 /* Supporting Files */,
 			);
 			path = Matchismo;
 			sourceTree = "<group>";
@@ -102,6 +95,21 @@
 				7CB6B3EE2C2B32F600FA4746 /* PlayingCardDeck.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		7CB6B3F02C2B42FE00FA4746 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7C3D6DBB2C242AA6003E3CA2 /* AppDelegate.h */,
+				7C3D6DBC2C242AA6003E3CA2 /* AppDelegate.m */,
+				7C3D6DBE2C242AA6003E3CA2 /* SceneDelegate.h */,
+				7C3D6DBF2C242AA6003E3CA2 /* SceneDelegate.m */,
+				7C3D6DC72C242AA8003E3CA2 /* Assets.xcassets */,
+				7C3D6DC92C242AA8003E3CA2 /* LaunchScreen.storyboard */,
+				7C3D6DCC2C242AA8003E3CA2 /* Info.plist */,
+				7C3D6DCD2C242AA8003E3CA2 /* main.m */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
