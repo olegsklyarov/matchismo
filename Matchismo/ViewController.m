@@ -25,17 +25,19 @@
     return [[PlayingCardDeck alloc] init];
 }
 
+- (void)flipCardButton:(UIButton *)button setTitle:(NSString *)title imageNamed:(NSString *)name {
+    [button setBackgroundImage:[UIImage imageNamed:name] forState:UIControlStateNormal];
+    [button setTitle:title forState:UIControlStateNormal];
+    self.flipsCount++;
+}
+
 - (IBAction)touchCardButton:(UIButton *)sender {
     if ([sender.currentTitle length]) {
-        [sender setBackgroundImage:[UIImage imageNamed:@"cardback"] forState:UIControlStateNormal];
-        [sender setTitle:@"" forState:UIControlStateNormal];
-        self.flipsCount++;
+        [self flipCardButton:sender setTitle:@"" imageNamed:@"cardback"];
     } else {
         Card *card = [self.deck drawRandomCard];
         if (card) {
-            [sender setBackgroundImage:[UIImage imageNamed:@"cardfront"] forState:UIControlStateNormal];
-            [sender setTitle:card.contents forState:UIControlStateNormal];
-            self.flipsCount++;
+            [self flipCardButton:sender setTitle:card.contents imageNamed:@"cardfront"];
         }
     }
 }
