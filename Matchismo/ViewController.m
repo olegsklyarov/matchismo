@@ -45,7 +45,6 @@
 - (void)setFlipsCount:(int)flipsCount {
     _flipsCount = flipsCount;
     self.flipsLabel.text = [NSString stringWithFormat:@"Filps: %d", self.flipsCount];
-    NSLog(@"Flips count: %d", self.flipsCount);
 }
 
 @end
